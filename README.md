@@ -1,7 +1,7 @@
 # ytfzf-kitty
-Works only for kitty terminal in Wayland or Xorg
+Works only for kitty terminal, in Wayland or Xorg
 
-## Edit ytfzf script to use kitty with icat (Wayland|Xorg)
+## Edit ytfzf script to use kitty with icat ( Wayland | Xorg )
 
 Insert the two lines of code below in the `preview_img` function:
 
@@ -12,7 +12,8 @@ kitty +kitten icat --clear --silent --transfer-mode=stream
 
 Shows the current image.
 ```sh
-kitty +kitten icat --silent --transfer-mode=stream --place=$thumb_width\x$thumb_height@$thumb_x\x$thumb_y $IMAGE  
+kitty +kitten icat --silent --transfer-mode=stream \
+--place=$thumb_width\x$thumb_height@$thumb_x\x$thumb_y $IMAGE  
 ```
 
 If you want to disable ueberzug you have to comment out the ueberzug functions in `user_selection` :
